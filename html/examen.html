@@ -26,7 +26,7 @@
     </header>
     <section class="reservaContainer">
       <div class="reserva">
-        <form class="reservaFormulario" id="reservaForm">
+        <form class="reservaFormulario" id="examenForm">
           <div class="formIzquierdo">
             <div class="inputDueno">
               <label for="dueno">Nombre del dueño</label>
@@ -58,59 +58,22 @@
               </select>
             </div>
         
-            <div class="inputDireccion">
-              <label for="direccion">Dirección</label>
-              <input
-                type="text"
-                id="direccion"
-                placeholder="Ingresa tu dirección"
-                required
-              />
+            <div class="inputTipoExamen">
+              <label for="tipoExamen">Tipo de examen</label>
+              <select id="tipoExamen">
+                <option value="sangre">Sangre</option>
+                <option value="cirugia">Cirugia</option>
+                <option value="radiografia">Radiografia</option>
+                <option value="resonancia">Resonancia magnetica</option>
+              </select>
             </div>
         
-            <div class="inputFecha">
-              <label for="fecha">Fecha</label>
-              <input type="date" id="fecha" required />
-            </div>
+            
           </div>
         
-          <div class="formDerecho">
-            <div class="formularioPago">
-              <label>
-                <input
-                  type="radio"
-                  name="pago"
-                  value="efectivo"
-                  id="efectivo"
-                  checked
-                />
-                Pago en efectivo
-              </label>
-              <label>
-                <input type="radio" name="pago" value="tarjeta" id="tarjeta" />
-                Pago con tarjeta
-              </label>
+      
         
-              <div id="tarjetaCredito" class="tarjetaCreditoForm" style="display: none">
-                <p>Información de la tarjeta</p>
-                <label for="tarjetaNumero">Número de tarjeta</label>
-                <input type="text" id="tarjetaNumero" maxlength="16" required/>
-        
-                <label for="fechaExpiracion">Fecha de expiración</label>
-                <input
-                  type="text"
-                  id="fechaExpiracion"
-                  placeholder="MM/AA"
-                  maxlength="5"
-                 required 
-                />
-        
-                <label for="CVC">CVC</label>
-                <input type="text" id="CVC" maxlength="3" required />
-              </div>
-            </div>
-        
-            <button type="submit">Guardar Reserva</button>
+            <button type="submit">Solicitar Examen</button>
           </div>
         </form>
         
