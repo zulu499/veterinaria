@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>veterina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/estilos.css"
+    />
+    <script src="../js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="headerTitulo">VetaPet🐾</h1>
+      <p class="headerUsuario" id="userHeader"></p>
+    </header>
+    <section class="reservaContainer">
+      <div class="reserva">
+        <form action="">
+          <div class="inputDueno">
+            <label for=""> nombre del dueño </label>
+            <input type="text" placeholder="ingresa tu nombre" />
+          </div>
+          <br />
+          <div class="inputMascota">
+            <label for=""> nombre de la mascota </label>
+            <input type="text" placeholder="ingresa tu nombre" />
+          </div>
+          <br />
+          <div class="selectTipo">
+            <label for=""> tipo de mascota </label>
+            <select name="" id="">
+              <option value="perro">perro</option>
+              <option value="gato">gato</option>
+              <option value="loro">loro</option>
+              <option value="caballo">caballo</option>
+            </select>
+          </div>
+          <br />
+          <div class="inputDireccion">
+            <label for=""> direccion </label>
+            <input type="text" placeholder="ingresa tu direccion" />
+          </div>
+          <br />
+          <div class="inputFecha">
+            <label for=""> fecha </label>
+            <input type="date" placeholder="ingresa la fecha" />
+          </div>
+          <br />
+        </form>
+      </div>
+      <div class="formularioPago">
+        <form class="">
+          <label for="">
+            <input
+              type="radio"
+              name="pago"
+              value="efectivo"
+              id="efectivo"
+              checked
+            />
+            pago en efectivo
+          </label>
+          <label for="">
+            <input type="radio" name="pago" value="tarjeta" id="tarjeta" />
+            pago con tarjeta
+          </label>
+        </form>
+        <div id="tarjetaCredito" class="tarjetaCreditoForm">
+          <p>informacion de la tarjeta</p>
+          <form class="">
+            <label for=""> numero de tarjeta </label>
+            <input type="text" name="tarjetaNumero" maxlength="16" required />
+            <br />
+            <label for="">fecha de expiracion</label>
+            <input
+              type="text"
+              name="fechaExpiracion"
+              placeholder="MM/AA"
+              required
+            />
+            <br />
+            <label for="">CVC</label>
+            <input type="text" name="CVC" maxlength="3" required />
+            <br />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

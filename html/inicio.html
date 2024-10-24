@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>veterina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/estilos.css"
+    />
+    <script src="../js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="headerTitulo">VetaPet🐾</h1>
+    </header>
+    <section class="containerInicioSesion">
+      <div class="container">
+        <div class="titulo">
+          <h2 id="titleForm">inciar sesion</h2>
+        </div>
+        <form class="formulario active" id="loginForm" onsubmit="handleLogin(event)">
+          <div class="inputContainer">
+            <label for="loginEmail"> correo </label>
+            <input
+              type="email"
+              placeholder="ingresa tu correo"
+              id="loginEmail"
+              name="loginEmail"
+              required
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="loginContraseña">contraseña </label>
+            <input
+              type="password"
+              placeholder="ingresa tu contraseña"
+              id="loginContraseña"
+              name="loginContraseña"
+              required
+            />
+          </div>
+          <div class="botonContainer">
+            <input type="submit" value="inicio sesion" />
+          </div>
+        </form>
+
+        <form class="formulario" id="registerForm" onsubmit="handleRegister(event)">
+          <div class="inputContainer">
+            <label for="registerName"> nombre </label>
+            <input
+              type="text"
+              placeholder="ingresa tu nombre"
+              id="registerName"
+              name="registerName"
+              required
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="registerEmail"> correo </label>
+            <input
+              type="email"
+              placeholder="ingresa tu correo"
+              id="registerEmail"
+              name="registerEmail"
+              required
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="registerContraseña">contraseña </label>
+            <input
+              type="password"
+              placeholder="ingresa tu contraseña"
+              id="registerContraseña"
+              name="registerContraseña"
+              required
+            />
+          </div>
+          <div class="botonContainer">
+            <input type="submit" value="registrarse" />
+          </div>
+        </form>
+        <button id="toggleButton" onclick="toggleForm()">crear un cuenta</button>
+      </div>
+    </section>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
