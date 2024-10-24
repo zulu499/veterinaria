@@ -132,15 +132,36 @@ body {
 /* estilos reserva */
 
 .reservaContainer {
-  display: flex;
   width: 70%;
   margin: 5% auto;
   background-color: white;
   border-radius: 25px;
   min-height: 20vh;
 }
-.reserva,
-.formularioPago {
-  flex: 1;
-  padding: 1%;
+
+.reservaFormulario {
+  display: flex;
 }
+
+.inputDueno,
+.inputMascota,
+.selectTipo,
+.inputDireccion,
+.inputFecha {
+  margin-bottom: 20px;
+}
+
+.formIzquierdo, .formDerecho {
+  flex: 1;
+  padding: 1%
+}
+
+.tarjetaCreditoForm {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 50%;
+  }
+}
+

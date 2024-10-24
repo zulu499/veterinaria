@@ -26,75 +26,93 @@
     </header>
     <section class="reservaContainer">
       <div class="reserva">
-        <form action="">
-          <div class="inputDueno">
-            <label for=""> nombre del dueño </label>
-            <input type="text" placeholder="ingresa tu nombre" />
+        <form class="reservaFormulario" id="reservaForm">
+          <div class="formIzquierdo">
+            <div class="inputDueno">
+              <label for="dueno">Nombre del dueño</label>
+              <input
+                type="text"
+                id="dueno"
+                placeholder="Ingresa tu nombre"
+                required
+              />
+            </div>
+        
+            <div class="inputMascota">
+              <label for="mascota">Nombre de la mascota</label>
+              <input
+                type="text"
+                id="mascota"
+                placeholder="Ingresa nombre de la mascota"
+                required
+              />
+            </div>
+        
+            <div class="selectTipo">
+              <label for="tipoMascota">Tipo de mascota</label>
+              <select id="tipoMascota">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="loro">Loro</option>
+                <option value="caballo">Caballo</option>
+              </select>
+            </div>
+        
+            <div class="inputDireccion">
+              <label for="direccion">Dirección</label>
+              <input
+                type="text"
+                id="direccion"
+                placeholder="Ingresa tu dirección"
+                required
+              />
+            </div>
+        
+            <div class="inputFecha">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" required />
+            </div>
           </div>
-          <br />
-          <div class="inputMascota">
-            <label for=""> nombre de la mascota </label>
-            <input type="text" placeholder="ingresa tu nombre" />
+        
+          <div class="formDerecho">
+            <div class="formularioPago">
+              <label>
+                <input
+                  type="radio"
+                  name="pago"
+                  value="efectivo"
+                  id="efectivo"
+                  checked
+                />
+                Pago en efectivo
+              </label>
+              <label>
+                <input type="radio" name="pago" value="tarjeta" id="tarjeta" />
+                Pago con tarjeta
+              </label>
+        
+              <div id="tarjetaCredito" class="tarjetaCreditoForm" style="display: none">
+                <p>Información de la tarjeta</p>
+                <label for="tarjetaNumero">Número de tarjeta</label>
+                <input type="text" id="tarjetaNumero" maxlength="16" />
+        
+                <label for="fechaExpiracion">Fecha de expiración</label>
+                <input
+                  type="text"
+                  id="fechaExpiracion"
+                  placeholder="MM/AA"
+                  maxlength="5"
+                />
+        
+                <label for="CVC">CVC</label>
+                <input type="text" id="CVC" maxlength="3" />
+              </div>
+            </div>
+        
+            <button type="submit">Guardar Reserva</button>
           </div>
-          <br />
-          <div class="selectTipo">
-            <label for=""> tipo de mascota </label>
-            <select name="" id="">
-              <option value="perro">perro</option>
-              <option value="gato">gato</option>
-              <option value="loro">loro</option>
-              <option value="caballo">caballo</option>
-            </select>
-          </div>
-          <br />
-          <div class="inputDireccion">
-            <label for=""> direccion </label>
-            <input type="text" placeholder="ingresa tu direccion" />
-          </div>
-          <br />
-          <div class="inputFecha">
-            <label for=""> fecha </label>
-            <input type="date" placeholder="ingresa la fecha" />
-          </div>
-          <br />
         </form>
-      </div>
-      <div class="formularioPago">
-        <form class="">
-          <label for="">
-            <input
-              type="radio"
-              name="pago"
-              value="efectivo"
-              id="efectivo"
-              checked
-            />
-            pago en efectivo
-          </label>
-          <label for="">
-            <input type="radio" name="pago" value="tarjeta" id="tarjeta" />
-            pago con tarjeta
-          </label>
-        </form>
-        <div id="tarjetaCredito" class="tarjetaCreditoForm">
-          <p>informacion de la tarjeta</p>
-          <form class="">
-            <label for=""> numero de tarjeta </label>
-            <input type="text" name="tarjetaNumero" maxlength="16" required />
-            <br />
-            <label for="">fecha de expiracion</label>
-            <input
-              type="text"
-              name="fechaExpiracion"
-              placeholder="MM/AA"
-              required
-            />
-            <br />
-            <label for="">CVC</label>
-            <input type="text" name="CVC" maxlength="3" required />
-            <br />
-          </form>
-        </div>
+        
       </div>
     </section>
   </body>
