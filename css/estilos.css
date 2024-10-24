@@ -137,7 +137,7 @@ a {
 /* estilos reserva */
 
 .reservaContainer {
-  width: 70%;
+  width: 55%;
   margin: 5% auto;
   background-color: white;
   border-radius: 25px;
@@ -169,9 +169,24 @@ a {
     width: 50%;
   }
 }
-
+.botonReserva{
+  margin-top: 35%;
+  border-radius: 20px;
+  padding: 1%;
+  margin-left: 42%;
+}
+.botonExamen{
+  border-radius: 20px;
+  margin: 2%;
+  padding: 1%;
+}
 /* estilos visualizacion*/
-
+.visualizacion{
+  color: white;
+}
+.visualizadorContainer{
+  margin: 8%;
+}
  .grid-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
